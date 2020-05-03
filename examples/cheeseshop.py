@@ -1,3 +1,3 @@
 import asdef, random
 while True:
-  pass
+  kinds = ['Baconburger', 'Hamburger']
