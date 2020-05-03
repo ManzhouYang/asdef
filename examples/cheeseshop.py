@@ -13,6 +13,6 @@ while True:
     fill3 = True
     fills3 = 'ketchup'
   elif kind == 'chips(fries)':
-    pass
+    fills = 'potato'
   asdef.cheeseshop(kind)
   print(fills, ': YES')
