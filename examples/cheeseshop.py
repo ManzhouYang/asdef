@@ -5,8 +5,7 @@ while True:
 	fill = ['cheese', 'bacon', 'potato']
 	kind = choice(kinds)
 	fts = choice(fill)
-	cheeseshop(kind,
-		   fts='YES')
+	cheeseshop(kind)
 	s = input('(yes or no) More ')
 	if s == 'no':
 		break
