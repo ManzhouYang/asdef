@@ -11,7 +11,6 @@ import turtle as t
 import wikipedia      # You must install wikipedia before you're useing wikipedia_info
 
 __version__ = '0.0.4'
-next_verision = None
 MAXPOOWER = 39.99999999999999
 MINPOOWER = -39.99999999999999
 periodic_table_many = 118
