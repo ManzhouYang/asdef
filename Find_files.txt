@@ -1,5 +1,0 @@
-ManzhouYang/
-  sewe/
-    asdef/
-      __init__.py
-      
