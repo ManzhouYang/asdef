@@ -1,0 +1,2 @@
+import asdef
+asdef.prime()
