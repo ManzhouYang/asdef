@@ -1,2 +1,2 @@
 import asdef
-asdef.prime()
+asdef.primes_number(233)
