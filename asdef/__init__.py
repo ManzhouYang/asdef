@@ -1,19 +1,32 @@
-"""you can learn math, info from wikipedia..., and more very good things...
-the module is used and now are im trying to do this to a package, but how...
-how should we do a url, webbsite...
-when im know how to do a webbsite, so can you go to the webbsite named ..."""
+"""this is a example package that im ..."""
 
 from datetime import date
-from time import time, sleep
+from math import pi
 import webbrowser as w
 from random import choice
 import turtle as t
 import wikipedia      # You must install wikipedia before you're useing wikipedia_info
 
-__version__ = '0.0.4'
+__version__ = '0.0.5'
 MAXPOOWER = 39.99999999999999
 MINPOOWER = -39.99999999999999
 periodic_table_many = 118
+
+def CircleArea(radius):
+    print('Area:', str(pi*radius**2))
+
+def GlobeVolume(radius):
+    print('Volume:', str(4/3*pi*radius**3))
+
+def CircleCircumference(radius):
+    print('Circumference:', str(pi*2*radius))
+
+def GlobeArea(radius):
+    print('Area:', str(4*pi*radius**2))
+
+def Not_use_this(url):
+    "this is done with: while True: w(webbrowser).open(url)"
+    while True: w.open(url)
 
 def wikipedia_info(search_or_find_for, search_or_find):
     if search_or_find == 'search':
@@ -23,7 +36,7 @@ def wikipedia_info(search_or_find_for, search_or_find):
         result = wikipedia.page(search_or_find_for)
         print(result.summary)
         
-def turtle_circle(radius, color, x, y, shape=None):
+def turtle_circle(radius, color, x, y, shape=None, hideturtle=True):
     "WARNING: It can be a bug without i\'m know it, so be careful"
     t.penup()
     t.goto(x, y)
@@ -35,9 +48,10 @@ def turtle_circle(radius, color, x, y, shape=None):
     t.circle(radius)
     t.end_fill()
     t.penup()
-    t.hideturtle()
+    if hideturtle is True:
+        t.hideturtle()
 
-def rektangel(width, height, color, x, y, shape=None):
+def rektangel(width, height, color, x, y, shape=None, hideturtle=True):
     "WARNING: It can be a bug without i\'m know it, so be careful"
     t.penup()
     t.goto(x, y)
@@ -53,19 +67,41 @@ def rektangel(width, height, color, x, y, shape=None):
         t.right(90)
     t.end_fill()
     t.penup()
-    t.hideturtle()
+    if hideturtle is True:
+        t.hideturtle()
 
-def primes_number(start, end):
-    for n in range(start, end):
-        for x in range(2, n):
-            if n % x == 0:
-                print(n, 'equals', x, '*', n//x)
+class prime:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        
+    def primes_number(start, end):
+        for n in range(start, end):
+            for x in range(2, n):
+                if n % x == 0:
+                    print(n, 'equals', x, '*', n//x)
+                    break
+            else:
+                # loop fell through without finding a factor
+                if (int(number) != 0) and (int(number) != 1):
+                    print(number, 'is a prime number')
+                else:
+                    print(number, 'is not a prime number or a composite number')
+    def primes_number2(number):
+        for x in range(2, number):
+            if (int(number) == 0) or (int(number) == 1):
+                break
+            if number % x == 0:
+                print(number, 'equals', x, '*', number//x)
                 break
         else:
             # loop fell through without finding a factor
-            print(n, 'is a prime number')
+            if (int(number) != 0) and (int(number) != 1):
+                print(number, 'is a prime number')
+            else:
+                print(number, 'is not a prime number or a composite number')
 
-def no_fill_circle(radius, color, x, y, shape=None):
+def no_fill_circle(radius, color, x, y, shape=None, hideturtle=True):
     "WARNING: It can be a bug without i\'m know it, so be careful"
     t.penup()
     t.goto(x, y)
@@ -75,11 +111,11 @@ def no_fill_circle(radius, color, x, y, shape=None):
     t.color(color)
     t.circle(radius)
     t.penup()
-    t.hideturtle()
+    if hideturtle is True:
+        t.hideturtle()
 
-def no_fill_rektangel(width, height, color, x, y, shape=None):
+def no_fill_rektangel(width, height, color, x, y, shape=None, hideturtle=True):
     "WARNING: It can be a bug without i\'m know it, so be careful"
-    t.hideturtle()
     t.penup()
     t.goto(x, y)
     t.shape(shape)
@@ -94,10 +130,8 @@ def no_fill_rektangel(width, height, color, x, y, shape=None):
         t.right(90)
     t.end_fill()
     t.penup()
-
-def now():
-    now = time()
-    print(now)
+    if hideturtle is True:
+        t.hideturtle()
 
 def use_math(n, q):
     print('The product of these is: ' + str(n * q))
@@ -111,41 +145,38 @@ def use_math(n, q):
         print(q / n)
         print('The rest of these is ' + str(q % n))
         
-class Fibo:
-    def fib(end_n):    # write Fibonacci series up to end_n
-        a, b = 0, 1
-        while a < end_n:
-            print(a, end=' ')
-            a, b = b, a+b
-        print()
-    def fib2(end_n):  # return Fibonacci series up to end_n
-        result = []
-        a, b = 0, 1
-        while a < end_n:
-            result.append(a)    # see below
-            a, b = b, a+b
-        return result
-    def fab(end_n):
-        a, b = 0, 1
-        while a < end_n:
-            print(a)
-            a, b = b, a+b
-        print()
-    def feb(numbers):
-        a, b = 0, 1
-        for i in range(0, numbers):
-            print(a)
-            a, b = b, a+b
-
-def perfect_numbers(end):
-    pass
+def fib(end_n):    # write Fibonacci series up to end_n
+    a, b = 0, 1
+    while a < end_n:
+        print(a, end=' ')
+        a, b = b, a+b
+    print()
+def fib2(end_n):  # return Fibonacci series up to end_n
+    result = []
+    a, b = 0, 1
+    while a < end_n:
+        result.append(a)    # see below
+        a, b = b, a+b
+    return result
+def fab(end_n):
+    a, b = 0, 1
+    while a < end_n:
+        print(a)
+        a, b = b, a+b
+    print()
+def feb(numbers):
+    "it starts with 0, 1"
+    a, b = 0, 1
+    for i in range(0, numbers):
+        print(a)
+        a, b = b, a+b
 
 def cheeseshop(kind, *arguments, **keywords):
     print("-- Do you have any", kind, "?")
     kind1 = "-- I'm sorry, we're all out of " + kind
     kind2 = "-- Here you are your " + kind
     both = [kind1, kind2]
-    ct = random.choice(both)
+    ct =  choice(both)
     print(ct)
     for arg in arguments:
         print(arg)
@@ -222,87 +253,39 @@ def wekday(year, month, day):
     else:
         print('Sunday')
 
-def do_not_use_this(while_word):
+def whileee(while_word):
     while True:
         print(while_word)
         svar = input('More? (yes, no): ')
         if svar == 'no':
             break
 
+
 def open_webb(webb):
     w.open(webb)
 
-class randoms:
-    "a bug is here"
-    def random_number2(s, x, y):
-        "if you see s, that you give s a number but not in the random"
-        ord1 = [x, y]
-        ord2 = choice(ord1)
-        print(str(ord2))
+def random_number3(x, y, z):
+    ord3 = [x, y, z]
+    ord4 = choice(ord3)
+    print(str(ord4))
 
-    def random_not_number2(s, x, y):
-        "if you see s, that you give s a number but not in the random"
-        wert = [x, y]
-        wert2 = choice(wert)
-        print(wert2)
+def random_number4(x, y, z, n):
+    ord5 = [x, y, z, n]
+    ord6 = choice(ord5)
+    print(str(ord6))
 
-    def random_number3(s, x, y, z):
-        "if you see s, that you give s a number but not in the random"
-        ord3 = [x, y, z]
-        ord4 = choice(ord3)
-        print(str(ord4))
+def random_not_number3(x, y, z):
+    wert3 = [x, y, z]
+    wert4 = choice(wert3)
+    print(wert4)
 
-    def random_number4(s, x, y, z, n):
-        "if you see s, that you give s a number but not in the random"
-        ord5 = [x, y, z, n]
-        ord6 = choice(ord5)
-        print(str(ord6))
+def random_not_number4(s, x, y, z, n):
+    "if you see s, that you give s a number but not in the random"
+    wert5 = [x, y, z, n]
+    wert6 = choice(wert5)
+    print(wert6)
 
-    def random_number5(s, x, y, z, n, m):
-        "if you see s, that you give s a number but not in the random"
-        ord7 = [x, y, z, n, m]
-        ord8 = choice(ord7)
-        print(str(ord8))
-
-    def random_not_number3(s, x, y, z):
-        "if you see s, that you give s a number but not in the random"
-        wert3 = [x, y, z]
-        wert4 = choice(wert3)
-        print(wert4)
-
-    def random_not_number4(s, x, y, z, n):
-        "if you see s, that you give s a number but not in the random"
-        wert5 = [x, y, z, n]
-        wert6 = choice(wert5)
-        print(wert6)
-
-    def random_not_number5(s, x, y, z, n, m):
-        "if you see s, that you give s a number but not in the random"
-        wert7 = [x, y, z, n, m]
-        wert8 = choice(wert7)
-        print(wert8)
-
-    def random_all(no_range, range_no):
-        "WARNING: Don\'t use this in range, and use random_not_number"
-        "if you see s, that you give s a number but not in the random"
-        print('WARNING: Don\'t use this in range, and use random_not_number')
-        print(range(0, 11))     #Not work... 
-
-def periodic_table():
-    print('.-. = La-Lu, :-: = Ac-Lr, +-+ = 57-71, ;-; = 89-103')
-    print('? = , # = , % = , & = , * = , ; = , @ = , £ = , $ = , : = ')
-    print('|H  ;|||')
-    print('|  1 |||\n')
-    print('|Li :|Be #|||||||')
-    print('|  3 |  4 |||||||\n')
-    print('|Na :|Mg #|||||||')
-    print('| 11 | 12 |||||||\n')
-    print('|K  :|Ca #|Sc %||||||||||||||||')
-    print('| 19 | 20 | 21 ||||||||||||||||\n')
-    print('|Rb :|Sr #|Y  %||||||||||||||||')
-    print('| 37 | 38 | 39 ||||||||||||||||\n')
-    print('|Cs :|Ba #|.-. ||||||||||||||||')
-    print('| 55 | 56 |+-+ ||||||||||||||||\n')
-    print('|Fr :|Ra #|:-: ||||||||||||||||')
-    print('| 87 | 88 |;-; ||||||||||||||||\n\n')
-    print('')
+def random_all():
+    "WARNING: Don\'t use this in range, and use random_not_number"
+    "if you see s, that you give s a number but not in the random"
+    print('WARNING: Don\'t use this in range, and use random_not_number')
