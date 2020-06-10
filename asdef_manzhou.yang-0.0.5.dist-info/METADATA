@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: asdef-manzhou.yang
+Version: 0.0.5
+Summary: A package that you must install wikipedia
+Home-page: https://github.com/ManzhouYang/sewe
+Author: Manzhou Yang
+Author-email: manzhou.yang@elev.kungsbacka.se
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Natural Language :: Swedish
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Example package
+
+This is a example package.
+You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+# Install
+
+You must install wikipedia with pip install wikipedia.
+
+# Usage
+import asdef
+
