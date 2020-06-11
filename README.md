@@ -7,6 +7,4 @@ There is a package that is a conbination by [Yu](https://test.pypi.org/project/Y
 # Other
 I'm using Windows 10.
 
-[![Windows 10](https://thecustomizewindows.com/wp-content/uploads/2010/12/MB_0007_windows.png)](https://thecustomizewindows.com)
-
 [![Python](https://www.python.org/static/opengraph-icon-200x200.png)](https://www.python.org)
