@@ -8,5 +8,6 @@ There is a package that is a conbination by [MYexample](https://test.pypi.org/pr
 [![Python](https://www.python.org/static/opengraph-icon-200x200.png)](https://www.python.org)
 
 # Other
-__I'm using Windows 10.__
+##### *I'm USED Windows 10.*
+##### Now I am USING Ubuntu 18.04.4.
 
