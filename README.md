@@ -10,4 +10,3 @@ There is a package that is a conbination by [MYexample](https://test.pypi.org/pr
 # Other
 ##### *I'm USED Windows 10.*
 ##### Now I am USING Ubuntu 18.04.4.
-
