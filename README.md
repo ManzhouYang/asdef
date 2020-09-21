@@ -11,7 +11,7 @@ There is a package that is a conbination by [MYexample](https://test.pypi.org/pr
 *I'm USED Windows 10.*
 Now I am USING Ubuntu 18.04.4.
 
-| Version | Supported         |
- -----------------------------
-| 0.0.1   | :x:               |
-| 0.0.2   | :green check mark:|
+| Version | Supported          |
+| ---------------------------- |
+| 0.0.1   | :x:                |
+| 0.0.2   | :white_check_mark: |
