@@ -8,11 +8,7 @@ There is a package that is a conbination by [MYexample](https://test.pypi.org/pr
 [![Python](https://www.python.org/static/opengraph-icon-200x200.png)](https://www.python.org)
 
 # Other
-*I'm USED Windows 10.*
-Now I am USING Ubuntu 18.04.4.
-
-| Version | Supported          |
-| ------- | ------------------ |
-| 0.0.1   | :x:                |
-| 0.0.2   | :x:                |
-| 0.0.4   | :white_check_mark: |
+| Version     | Supported          |
+| ----------- | ------------------ |
+| >=0.0.2     | :x:                |
+| <=0.0.4     | :white_check_mark: |
