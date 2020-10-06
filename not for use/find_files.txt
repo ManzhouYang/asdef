@@ -1,6 +1,0 @@
-ManzhouYang/
-  sewe/
-    asdef/
-      __init__.py
-      __pycache__/
-        __init__.cpython3.8.pyc
