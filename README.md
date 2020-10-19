@@ -11,4 +11,4 @@ There is a package that is a conbination by [MYexample](https://test.pypi.org/pr
 | Version     | Supported          |
 | ----------- | ------------------ |
 | <=0.0.9     | :x:                |
-| <=0.1       | :white_check_mark: |
+| >=0.1       | :white_check_mark: |
