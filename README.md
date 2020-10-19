@@ -10,5 +10,5 @@ There is a package that is a conbination by [MYexample](https://test.pypi.org/pr
 # Other
 | Version     | Supported          |
 | ----------- | ------------------ |
-| >=0.0.9     | :x:                |
+| <=0.0.9     | :x:                |
 | <=0.1       | :white_check_mark: |
